@@ -1,0 +1,122 @@
+/* Challenge CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  /* margin: 0 auto; */
+}
+
+.container {
+  /* Add your styles here */
+  margin: 0 auto;
+  width: 80%;
+}
+
+h1 {
+  /* Add your styles here */
+  font-size: 40px;
+}
+
+#image_chai{
+  
+}
+.pricing-heading {
+  /* Add your styles here */
+  text-align: center;
+  margin: 10px;
+  /* border: 2px solid black; */
+}
+
+.pricing-container {
+  /* Add your styles here */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+h2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pricing-card {
+  /* Add your styles here */
+  /* border: 2px solid grey; */
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.pricing-card:hover {
+  /* Add your styles here */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.pricing-card.popular {
+  /* Add your styles here */
+  border: 2px solid #FF7800;
+  padding-bottom: 30px;
+  /* margin-top: 5px; */
+}
+
+.popular-badge {
+  /* Add your styles here */
+  border: 2px solid #FF7800;
+  display: inline;
+  background-color: #FF7800;
+  padding: 4px 10px;
+  border-radius: 15px;
+  color: #ffffff;
+  position: absolute;
+    top: 70px;
+    left: 655px;
+    transform: translateX(-50%);
+}
+
+.price {
+  /* Add your styles here */
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.period {
+  /* Add your styles here */
+  margin-bottom: 15px;
+}
+
+.features {
+  /* Add your styles here */
+  margin-bottom: 20px;
+}
+
+.features li {
+  /* Add your styles here */
+  margin-bottom: 8px;
+  list-style-type: none;
+}
+
+.subscribe-btn {
+  /* Add your styles here */
+  padding: 6px 18px;
+  border-radius: 20px;
+  border: none;
+  background-color: #FF9533;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.subscribe-btn:hover {
+  /* Add your styles here */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}

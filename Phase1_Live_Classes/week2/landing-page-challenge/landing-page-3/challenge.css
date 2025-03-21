@@ -1,0 +1,149 @@
+/* Challenge CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.header {
+  /* Define header styles here */
+  height: 50px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #8B4513;
+  padding:  5px 0;
+}
+
+.logo {
+  /* Define logo styles here */
+  margin-left: 200px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 5px;
+  border-radius: 50%;
+  
+  /* Define image styles within the logo here */
+}
+
+.nav-menu a {
+  /* Define navigation link styles here */
+  text-decoration: none;
+  margin-right: 20px;
+  color: #8B4513;
+}
+
+.nav-menu{
+  margin-right: 35px;
+}
+
+.nav-menu a:hover {
+  /* Define hover styles for navigation links here */
+}
+
+.hero {
+  /* Define hero section styles here */
+  background:  url("./assets/chaipatti.png");
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: lighten;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  
+}
+
+.hero::before {
+  content: "";
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  height: 70vh;
+  background: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+}
+
+.hero-text h1 {
+  /* Define styles for h1 in hero-text here */
+  margin-bottom: 4px;
+  font-size: 35px;
+}
+
+.hero-text p {
+  /* Define styles for paragraph in hero-text here */
+  margin-bottom: 10px;
+  
+
+}
+
+.shop-button {
+  /* Define shop button styles here */
+  color: #ffffff;
+  font-size: small;
+  background-color: #8B4513;
+  padding: 8px 20px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+}
+
+.shop-button:hover {
+  /* Define hover styles for shop button here */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.tea-collection {
+  /* Define tea collection section styles here */
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tea-collection h2 {
+  /* Define styles for h2 in tea collection here */
+  margin-bottom: 30px;
+  color: #8B4513;
+}
+
+.tea-cards {
+  /* Define tea cards container styles here */
+  display: grid;
+  grid-template-columns: 260px 260px 260px;
+  text-align: center;
+  row-gap: 50px;
+  column-gap: 50px;
+ 
+  
+}
+
+.tea-card {
+  /* Define styles for each tea card here */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 20px;
+}
+
+.tea-card h3 {
+  /* Define styles for tea card headings here */
+  color: #8B4513;
+}
+
+.tea-card p {
+  /* Define styles for tea card paragraph text here */
+  font-size: small;
+}

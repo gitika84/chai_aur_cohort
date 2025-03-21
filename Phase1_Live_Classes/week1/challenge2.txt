@@ -1,0 +1,56 @@
+From URLs to IPs: A Journey Through DNS
+
+
+Have you ever wondered how typing a web address like www.google.com magically takes you to the right website?
+
+It is only possible with DNS ( Domain Name System ). DNS is just like Phone Book , there are lot of number in your phone book. if you want any number of a person just type the name of that person and go ahead. DNS is as similar as that every IP address is assigned with a unique name so you don’t have need to remember any IP address you just need to remember DNS Name.
+
+DNS Working :
+Suppose you want to visit a Site . you enter the name of that website on Browser like you want to search www.google.com . Then
+
+Your Browser ( Client ) sends a request to the DNS server about the IP address of www.google.com.
+
+DNS server checks the database to find the IP of that website.
+
+Server return this address to your Browser.
+
+Browser use that address related to the website .
+
+Browser open that website on your laptop.
+
+
+
+Type of DNS Records :
+DNS Records are instructions that tell the internet how to connect with a domain .
+
+Common Uses of DNS Records
+
+Directing visitors to the correct website.
+
+Delivering emails to the right mail server.
+
+Verifying domain ownership for security.
+
+There are mainly four type of DNS Records
+
+A Record ( Address Record ) :- Address record connect the domain to their IP address. it is like a phonebook where a person name linked with their phone number.
+
+CNAME Record (Canonical Name Record) :- Canonical name record redirect one domain to another domain. Example : Suppose you search blog.example.com and it redirect to the main site like example.com.
+
+MX Record ( Mail Exchange Record ) :- MX Record tells where to deliver mails for your domain. MX record is usually provided by the email provider. Example : Suppose you sent an email to a company mail address. The MX record is like a company post office that deliver and sort mail. if the main post office is close then the mail send to a backup office.
+
+TXT Record (Text Record) :- Text record used to store text based information about a domain. Example : It’s like showing a unique ID card to prove that you are the rightful owner of a property.
+
+DNS Hierarchy :
+DNS Resolution Process :- when a user want to access a domain then their device send request to DNS resolver. DNS resolver check the cache if the data is available in the cache the DNS server return that data but if the data is not in the cache then the request send to the Root server.
+
+Root DNS Server :- There are 13 main Root server all over the world. The root DNS servers are the top-level DNS servers responsible for knowing where to find authoritative servers for top-level domains (TLDs) like .com, .org etc.
+
+TLD DNS Server :- TDL stands for Top-level Domain. TDL helps to find the Authoritative DNS for a domain. Example : You have a domain to search kuk.edu top level domain gives a name server for Kuk.
+
+Authoritative DNS Server :- finally , Authoritative DNS server hold the exact IP address for that domain it return the address to the DNS resolver and DNS resolver open that URL for user.
+
+
+
+Conclusion :-
+The Domain Name System (DNS) serves as the backbone of internet functionality, seamlessly translating human-readable domain names into machine-readable IP addresses. The Hierarchy of DNS from Root to Authoritative server is very effective and fast so that human can easily access any domain.
