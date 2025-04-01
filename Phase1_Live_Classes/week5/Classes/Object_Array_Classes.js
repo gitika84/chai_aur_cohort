@@ -67,17 +67,17 @@ const person = {
 
 // console.log(person.hobbies)
 
-// const remote = {
-//     color: "Black",
-//     brand : "XYZ",
-//     dimensions : { height : 1 , width : 1},
-//     turnOff : function(){
+const remote = {
+    color: "Black",
+    brand : "XYZ",
+    dimensions : { height : 1 , width : 1},
+    turnOff : function(){
 
-//     } ,
-//     volumeUp : function(){
+    } ,
+    volumeUp : function(){
 
-//     }
-// }
+    }
+}
 
 
 let fname = "Geet"
