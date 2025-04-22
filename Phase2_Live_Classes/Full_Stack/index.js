@@ -10,11 +10,9 @@ const app = express()  // webserver
 
 app.use(cors({
     origin: process.env.BASE_URL,
-    methods: [ "Get", "POST", "DELETE", "OPTIONS"] , // these are not case sensitive
+    methods: [ "GET", "POST", "DELETE", "OPTIONS"] , // these are not case sensitive
     allowedHeaders: ['Content-Type' , 'Authorization']  // case sensitive
 }))
-
-
 
 // for accept json data
 app.use(express.json())
@@ -35,7 +33,7 @@ db()
 
 
 // user routes
-app.use('/api/v1/users', userRoutes)
+app.use('/api/v1/users/', userRoutes)
 
 
 app.listen(port, () => {
