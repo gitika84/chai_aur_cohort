@@ -42,18 +42,39 @@ function unlinkWithPromise(filepath){
     })
 }
 
+
 readFileWithPromise('./Live_Classes/Project_and_Machine_coding_round/hey.txt', 'utf-8')
     .then((content) => writeFileWithPromise('./Live_Classes/Project_and_Machine_coding_round/backup.txt' , content))
     .then(() => unlinkWithPromise('./Live_Classes/Project_and_Machine_coding_round/hey.txt'))
     .catch((e) => console.log("Error" , e))
+ 
+// --------- async , await -----------
 
+function wait(seconds){
+    return new Promise((resolve , reject) => {
+        setTimeout(() => resolve() , seconds * 1000)
+    })
+}
+
+async function doTask() {
+   try{
+    const filecontent = await readFileWithPromise('./Live_Classes/Project_and_Machine_coding_round/hey.txt', 'utf-8')
+    await writeFileWithPromise('./Live_Classes/Project_and_Machine_coding_round/backup.txt' , filecontent)
+    await wait(10)
+    await unlinkWithPromise('./Live_Classes/Project_and_Machine_coding_round/hey.txt')
+   }catch(e){
+    console.log("Error", e)
+   }
+}
+
+doTask().then(() => console.log("All Done"))
 
 // ------------- Modern code -------------------
 
 fsv2.readFile('./Live_Classes/Project_and_Machine_coding_round/hey.txt', 'utf-8')
     .then((content) => fsv2.writeFile('./Live_Classes/Project_and_Machine_coding_round/backup.txt' , content))
     .then(() => fsv2.unlink('./Live_Classes/Project_and_Machine_coding_round/hey.txt'))
-    .catch((err) => console.log("Error" , e) )
+    .catch((err) => console.log("Error" , err) )
 
 
 // ------------ Legacy code ---------------------
