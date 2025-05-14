@@ -52,3 +52,20 @@ if(!Array.prototype.myReduce){
 
 let result = arr.myReduce((acc , curVal) => acc + curVal )
 console.log(result)
+
+// Pollyfill of filter
+
+if(!Array.prototype.myFilter){
+    Array.prototype.myFilter = function(cb){
+        let newarr = []
+        for (let i = 0; i < this.length; i++) {
+            if(cb(this[i] , i)){
+                newarr.push(this[i])
+            } 
+        }
+        return newarr
+    }
+}
+
+let Acc = arr.myFilter((ele) => ele > 2)
+console.log(Acc)
